@@ -55,19 +55,31 @@ if (!empty($_POST)) {
 
     <form action="" method="POST">
 
-        <div class="container-login">
+        <div class="wrapper-login">
+            <div class="container-login">
 
-            <div style="display:flex; align-items:center; flex-direction:column;">
-                <div class="title-login">MRKT</div>
-                <div class="subtitle-login">Onde sua Jornada Começa!</div>
+                <div style="display:flex; align-items:start; flex-direction:column;width:80%">
+                    <div class="title-login">Login</div>
+                    <div class="subtitle-login">Insira seus dados para avançar</div>
+                </div>
+
+                <div class="column-input">
+                    <div class="bundle-input-label">
+                        <label for="email" class="input-label">E-mail</label>
+                        <input type="text" placeholder="E-mail" name="email" class="input-login">
+                    </div>
+
+                    <div class="bundle-input-label">
+                        <label for="senha" class="input-label">Senha</label>
+                        <input type="password" placeholder="Senha" name="senha" class="input-login">
+                    </div>
+
+                </div>
+                <input type="submit" class="button-login" value="Entrar">
             </div>
-
-            <div class="row-input">
-                <input type="text" placeholder="E-mail" name="email" class="input-login">
-                <input type="password" placeholder="Senha" name="senha" class="input-login">
-            </div>          
-            <input type="submit" class="button-login" value="Entrar">  
         </div>
+
+
 
 
 

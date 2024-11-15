@@ -14,7 +14,7 @@ if(!$_SESSION['qtdTotalCart']){
 
 function incrementarQuantidade($id_produto) {
     if (isset($_COOKIE['carrinho'])) {
-        $carrinho = json_decode($_COOKIE['carrinho'], true); // Decodifica o carrinho salvo
+        $carrinho = json_decode($_COOKIE['carrinho'], true); 
     } else {
         $carrinho = [];
     }

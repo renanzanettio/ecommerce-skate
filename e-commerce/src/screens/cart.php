@@ -153,6 +153,8 @@ include('../controller/php/query_produto.php');
                     echo "Seu carrinho está vazio!";
                 }
 
+
+
                 ?>
 
 

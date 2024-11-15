@@ -156,7 +156,7 @@ if(isset($_SESSION['filtro'])){
         <div class="conteudo-home-screen container-fluid">
 
             <div class="txt-home-screen">
-                <label class="title-home-screen">Onde sua Jornada Começa</label>
+                <label class="title-home-screen">Onde sua Jornada Começa!</label>
                 <label class="subtitle-home-screen"> Para quem faz das ruas seu palco e das manobras seu estilo</label>
             </div>
 

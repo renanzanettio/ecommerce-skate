@@ -15,7 +15,7 @@ function salvarCarrinhoNoCookie($carrinho) {
 
 function incrementarQuantidade($id_produto) {
     if (isset($_COOKIE['carrinho'])) {
-        $carrinho = json_decode($_COOKIE['carrinho'], true); // Decodifica o carrinho salvo
+        $carrinho = json_decode($_COOKIE['carrinho'], true);
     } else {
         header("Location: ../../screens/cart.php");
     }

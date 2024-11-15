@@ -12,6 +12,10 @@
   display: none;
 }
 
+img{
+  pointer-events: none
+}
+
 a {
   text-decoration: none;
   color: currentColor;
@@ -163,7 +167,7 @@ body {
     flex-direction: row;
     padding: 0;
     height: 360px;
-    background-color: #c2c2c2;
+    background-color: #C2C2C2;
     overflow: hidden !important;
   }
 
@@ -314,8 +318,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
     width: 85%;
-    margin-bottom: 10vw;
-    margin-top: 10vw;
+    margin-bottom: 4vw;
+    margin-top: 4vw;
   }
 
   .title-items-screen {
@@ -586,21 +590,40 @@ body {
   font-size: 20px;
 }
 
-.container-login{
+
+.wrapper-login{
   display: flex;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 150px;
+  background-color: #272727;
+}
+
+.container-login{
+  padding-top: 150px;
+  padding-bottom: 150px;
+  display: flex;
+  width: 25%;
+  max-height: 30vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 150px;
+  background-color: #353535;
+  border-radius: 14px;
 }
 
 .input-login{
-  padding: 7px 14px;
-  border: 1px solid #272727;
+  padding: 10px 15px;
+  border: 1px solid #505050;
   border-radius: 34px;
-
+  background-color: transparent;
+  font-size: 15px;
+  position: relative;
+  color: var(--white);
 }
 
 .button-login{
@@ -610,19 +633,36 @@ body {
   border: none;
   color: var(--white);
   font-size: 16px;
+  align-self: flex-end;
+  justify-self: end;
+  margin-right: 10%;
 }
 
-.row-input{
+.column-input{
   align-self: center;
   display: flex;
-  flex-direction: row;
-  width: 30%;
+  flex-direction: column;
+  width: 80%;
   min-height: 30%;
   justify-content: space-between;
+  gap: 40px;
+}
+
+.bundle-input-label{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .title-login{
   font-size: 32px;
+  color: var(--white);
+
+}
+
+.input-label{
+  color: #ACACAC;
+  font-size: 14px;
 }
 
 .subtitle-login{
