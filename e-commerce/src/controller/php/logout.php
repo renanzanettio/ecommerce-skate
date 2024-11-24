@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 include("../controller/php/conexao.php");
 

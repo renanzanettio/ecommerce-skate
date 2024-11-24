@@ -164,36 +164,6 @@ include('../controller/php/query_produto.php');
 
 
 
-                <!-- <div class="card-container-cart">
-
-                    <div class="conteudo-card-cart">
-                        <?php echo '<img src="../imgs/' . $produtos[0]['imagem_produto'] . '" alt="' . $produtos[0]['nome_produto'] . '">' ?>
-
-                        <div class="txt-card-cart">
-
-                            <div class="title-card-cart"><?php echo $produtos[0]['nome_produto']; ?></div>
-
-                            <div class="prices-card-cart">
-                                <div class="incash-card-cart">
-                                    R$<?php echo str_replace('.', ',', $produtos[0]['preco_produto']) ?></div>
-                                <div class="installments-card-cart">6x de
-                                    R$<?php echo str_replace('.', ',', round(intval($produtos[0]['preco_produto']) / 6, 2)) ?>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-
-                    </div>
-
-                    <div class="buttons-card-cart">
-                        <input type='button' onclick='removeToCart(" . $id_produto . ")' value='Remover Produto'>
-                    </div>
-
-                </div> -->
-
-
             </div>
 
         </div>

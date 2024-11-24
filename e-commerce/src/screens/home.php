@@ -21,11 +21,10 @@ include('../controller/php/query_produto.php');
 
 
 
-// PHP para processar o filtro
+
 if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['filtro'])) {
     $selectedFilter = $_POST['filtro'];
 
-    // Aqui você coloca a ação em PHP para cada filtro
     if ($selectedFilter === 'todos') {
         $code_filtro = "SELECT * FROM produtos";
         $query_filtro = $mysqli->query($code_filtro) or die("Falha na execução do código SQL: " . $mysqli->error);
